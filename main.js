@@ -1,8 +1,13 @@
 "use strct";
-console.log("test me slowly .");
-//loop test
+//ptime number
 
-for (let i = 0; i < 3; i++) {
-  console.log("i=", i);
-  for (h = 0; h < 3; h++) console.log("h= ", h);
+function checkIfIsPrime(n) {
+  for (let i = 2; i < n; i++) {
+    if (n % i == 0) {
+      console.log(" not ptime", i, n);
+    } else {
+      console.log("is prime", i, n);
+    }
+  }
 }
+checkIfIsPrime(7);
