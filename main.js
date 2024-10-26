@@ -4,19 +4,21 @@
 // second step: check each number if it is prime
 
 function checkUpTo_n(n) {
-  for (i = 2; i < n; i++) {
-    if (!IsPrime(i)) {
-      console.log("N is not prime");
+  for (let i = 2; i <= n; i++) {
+    if (IsPrime(i)) {
+      console.log(i, "N is not prime");
+    } else {
+      console.log("is prime ", i);
     }
-    console.log("is prime ", i);
   }
 }
 
 function IsPrime(number) {
-  for (i = 2; i < number; i++) {
-    if (number % i != 0) {
-      console.log(i, number, " is not prime");
+  for (let i = 2; i < number; i++) {
+    if (number % i == 0) {
+      console.log(i);
       return false;
     } else return true;
   }
 }
+checkUpTo_n(7);
