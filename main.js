@@ -34,3 +34,16 @@
 //   return a > b ? b : a;
 // }
 // console.log(min(1, 2));
+
+// pow(a,b)
+
+function pow(a, b) {
+  if (a <= 1 || b <= 1) return false;
+  let c = a;
+  for (let i = 0; i < b; i++) {
+    a *= c;
+    console.log(a);
+  }
+  console.log(a);
+}
+pow(2, 2);
