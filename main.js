@@ -37,13 +37,22 @@
 
 // pow(a,b)
 
-function pow(a, b) {
-  if (a <= 1 || b <= 1) return false;
-  let c = a;
-  for (let i = 0; i < b; i++) {
-    a *= c;
-    console.log(a);
-  }
-  console.log(a);
-}
-pow(2, 2);
+// function pow(a, b) {
+//   if (a <= 1 || b <= 1) return false;
+//   let c = a;
+//   for (let i = 0; i < b; i++) {
+//     a *= c;
+//     console.log(a);
+//   }
+//   console.log(a);
+// }
+// pow(2, 2);
+
+let fExpresion = function (n) {
+  console.log("test");
+  return n;
+};
+let f1 = fExpresion;
+let f2 = fExpresion(2);
+f1(2);
+console.log(f2);
