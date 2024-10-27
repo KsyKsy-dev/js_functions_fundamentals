@@ -48,11 +48,19 @@
 // }
 // pow(2, 2);
 
-let fExpresion = function (n) {
-  console.log("test");
-  return n;
-};
-let f1 = fExpresion;
-let f2 = fExpresion(2);
-f1(2);
-console.log(f2);
+// let fExpresion = function (n) {
+//   console.log("test");
+//   return n;
+// };
+// let f1 = fExpresion;
+// let f2 = fExpresion(2);
+// f1(2);
+// console.log(f2);
+
+function ask(a, b, c) {
+  if (confirm(a)) b();
+  else c();
+}
+
+}
+ask("question", b, c);
