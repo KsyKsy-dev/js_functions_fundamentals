@@ -56,11 +56,16 @@
 // let f2 = fExpresion(2);
 // f1(2);
 // console.log(f2);
-
 function ask(a, b, c) {
-  if (confirm(a)) b();
-  else c();
+  if (confirm(a)) console.log("go");
+  else console.log("stop");
 }
-
-}
-ask("question", b, c);
+ask(
+  "quetion",
+  function () {
+    console.log("go");
+  },
+  function () {
+    console.log("stop");
+  }
+);
