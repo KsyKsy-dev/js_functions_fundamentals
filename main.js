@@ -56,16 +56,13 @@
 // let f2 = fExpresion(2);
 // f1(2);
 // console.log(f2);
+//  arrow functions
 function ask(a, b, c) {
-  if (confirm(a)) console.log("go");
-  else console.log("stop");
+  if (confirm(a)) b();
+  else c();
 }
 ask(
-  "quetion",
-  function () {
-    console.log("go");
-  },
-  function () {
-    console.log("stop");
-  }
+  "here we are",
+  (b = () => console.log("go")),
+  (c = () => console.log("stop"))
 );
