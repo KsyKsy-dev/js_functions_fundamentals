@@ -57,12 +57,11 @@
 // f1(2);
 // console.log(f2);
 //  arrow functions
-function ask(a, b, c) {
-  if (confirm(a)) b();
-  else c();
-}
-ask(
-  "here we are",
-  (b = () => console.log("go")),
-  (c = () => console.log("stop"))
-);
+//
+// computed properties
+
+let prop = prompt("add values name", "ertie");
+let obj = {
+  ["prop" + prop]: 6,
+};
+console.log(obj.propertie);
