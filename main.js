@@ -77,5 +77,15 @@
 // let obj = askName("j", 20);
 // console.log(obj.name);
 
-let obj = {};
-console.log(obj.v === undefined);
+// let obj = {};
+// console.log(obj.v === undefined);
+
+// loop for in
+
+let obj = {
+  one: 1,
+  2: 2,
+};
+for (let key in obj) {
+  console.log(key);
+}
