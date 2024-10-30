@@ -78,4 +78,4 @@
 // console.log(obj.name);
 
 let obj = {};
-console.log(obj.n === undefined);
+console.log("v" in obj);
