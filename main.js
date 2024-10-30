@@ -60,8 +60,19 @@
 //
 // computed properties
 
-let prop = prompt("add values name", "ertie");
-let obj = {
-  ["prop" + prop]: 6,
-};
-console.log(obj.propertie);
+// let prop = prompt("add values name", "ertie");
+// let obj = {
+//   ["prop" + prop]: 6,
+// };
+// console.log(obj.propertie);
+
+// variaables as a propety names
+
+function askName(name, age) {
+  return {
+    name: name,
+    age: age,
+  };
+}
+askName("j", 30);
+console.log(askName);
