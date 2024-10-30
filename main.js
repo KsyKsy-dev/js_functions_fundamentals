@@ -68,11 +68,14 @@
 
 // variaables as a propety names
 
-function askName(name, age) {
-  return {
-    name: name,
-    age: age,
-  };
-}
-askName("j", 30);
-console.log(askName);
+// function askName(name, age) {
+//   return {
+//     name,
+//     age,
+//   };
+// }
+// let obj = askName("j", 20);
+// console.log(obj.name);
+
+let obj = {};
+console.log(obj.n === undefined);
