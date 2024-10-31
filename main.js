@@ -102,12 +102,29 @@
 
 // check obj emptyes
 
+// let obj = {
+//   0: 0,
+// };
+// function check(obj) {
+//   for (let key in obj) {
+//     return false;
+//   }
+//   return true;
+// }
+// console.log(check());
+
+// sum obj's properyes
+
 let obj = {
-  0: 0,
+  one: 0,
+  two: 0,
+  three: 0,
 };
-function check(obj) {
+let start = 0;
+function check() {
   for (let key in obj) {
-    return false;
+    start += obj[key];
   }
-  return true;
+  return start;
 }
+console.log(check());
