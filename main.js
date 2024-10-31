@@ -82,10 +82,32 @@
 
 // loop for in
 
+// let obj = {
+//   one: 1,
+//   2: 2,
+// };
+// for (let key in obj) {
+//   console.log(key);
+// }
+
+// integer properies
+// let telCode = {
+//   "+49": "German",
+//   "+44": "Swizz",
+//   "+1": "USA",
+// };
+// for (let code in telCode) {
+//   console.log(+code);
+// }
+
+// check obj emptyes
+
 let obj = {
-  one: 1,
-  2: 2,
+  0: 0,
 };
-for (let key in obj) {
-  console.log(key);
+function check(obj) {
+  for (let key in obj) {
+    return false;
+  }
+  return true;
 }
