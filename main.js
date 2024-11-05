@@ -127,13 +127,12 @@
 
 // obj cloning
 
+// Object.assign mrthod
 let obj = {
-  n: 0,
-  a: 0,
+  a: 2,
 };
-let obj2 = {};
+let obj1 = { c: 2 };
+let obj2 = { d: 1 };
 
-for (let key in obj) {
-  obj2[key] = obj[key];
-}
-console.log(obj2);
+Object.assign(obj, obj1, obj2);
+console.log(obj);
