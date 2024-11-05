@@ -131,8 +131,11 @@
 let obj = {
   a: 2,
 };
-let obj1 = { c: 2 };
-let obj2 = { d: 1 };
+// let obj1 = { c: 2 };
+// let obj2 = { d: 1 };
 
-Object.assign(obj, obj1, obj2);
-console.log(obj);
+// Object.assign(obj, obj1, obj2);
+// console.log(obj);
+
+let clone = Object.assign({}, obj);
+console.log(clone);
