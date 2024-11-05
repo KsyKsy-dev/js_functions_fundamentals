@@ -117,10 +117,23 @@
 
 //
 // obj equality
-let a = {};
-let b = a;
-console.log(a == b, a === b);
+// let a = {};
+// let b = a;
+// console.log(a == b, a === b);
 
-let d = {};
-let e = {};
-console.log(e == d, d === e);
+// let d = {};
+// let e = {};
+// console.log(e == d, d === e);
+
+// obj cloning
+
+let obj = {
+  n: 0,
+  a: 0,
+};
+let obj2 = {};
+
+for (let key in obj) {
+  obj2[key] = obj[key];
+}
+console.log(obj2);
