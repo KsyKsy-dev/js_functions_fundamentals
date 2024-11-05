@@ -115,16 +115,12 @@
 
 // sum obj's properyes
 
-let obj = {
-  one: 0,
-  two: 0,
-  three: 0,
-};
-let start = 0;
-function check() {
-  for (let key in obj) {
-    start += obj[key];
-  }
-  return start;
-}
-console.log(check());
+//
+// obj equality
+let a = {};
+let b = a;
+console.log(a == b, a === b);
+
+let d = {};
+let e = {};
+console.log(e == d, d === e);
