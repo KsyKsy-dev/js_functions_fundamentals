@@ -153,14 +153,12 @@
 // console.log(obj, obj2);
 
 //interlinked objects
-function marry(man, woman) {
-  woman.husbent = man;
-  man.wife = woman;
-  return {
-    father: man,
-    mother: woman,
-  };
-}
+// this keyword
 
-let family = marry({ name: "John" }, { name: "Ann" });
-console.log(family);
+let user={
+  name:"g",
+  greet:(){
+    console.log("name");
+  }
+}
+user.greet()
