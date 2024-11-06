@@ -142,12 +142,25 @@
 
 // structoring clone for creating tottaly separated objects
 
-let obj = {
-  a: 0,
-};
-let obj1 = obj;
-obj1.a = 2;
-console.log(obj, obj1);
-let obj2 = structuredClone(obj);
-obj2.a = 3;
-console.log(obj, obj2);
+// let obj = {
+//   a: 0,
+// };
+// let obj1 = obj;
+// obj1.a = 2;
+// console.log(obj, obj1);
+// let obj2 = structuredClone(obj);
+// obj2.a = 3;
+// console.log(obj, obj2);
+
+//interlinked objects
+function marry(man, woman) {
+  woman.husbent = man;
+  man.wife = woman;
+  return {
+    father: man,
+    mother: woman,
+  };
+}
+
+let family = marry({ name: "John" }, { name: "Ann" });
+console.log(family);
