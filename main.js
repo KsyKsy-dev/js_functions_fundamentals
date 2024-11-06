@@ -227,10 +227,16 @@
 let leader = {
   step: 0,
   up() {
-    return this.step++;
+    this.step++;
+    return this;
   },
   down() {
-    return this.step--;
+    this.step--;
+    return this;
+  },
+  showStep() {
+    console.log(this.step);
+    return this;
   },
 };
-console.log(leadder.up());
+leader.up().showStep().down().showStep().up().up().showStep();
