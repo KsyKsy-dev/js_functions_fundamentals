@@ -190,12 +190,34 @@
 // f();
 
 //n this in function
-function f() {
-  return {
-    name: "N",
-    result: this,
-  };
-}
-let user = f();
+// function f() {
+//   return {
+//     name: "N",
+//     ref() {
+//       return this;
+//     },
+//   };
+// }
+// let user = f();
+// console.log(user);
 
-console.log(user.result.name);
+// console.log(user.ref().name, user);
+
+// methods calculator
+
+let calculator = {
+  a: 0,
+  b: 0,
+  read() {
+    this.a = +prompt("add number", 0);
+    this.b = +prompt("add number", 0);
+  },
+  sum() {
+    return this.a + this.b;
+  },
+  mltpl() {
+    return this.a * this.b;
+  },
+};
+calculator.read();
+console.log(calculator.sum());
