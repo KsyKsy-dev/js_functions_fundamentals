@@ -155,10 +155,14 @@
 //interlinked objects
 // this keyword
 
-let user={
-  name:"g",
-  greet:(){
-    console.log("name");
-  }
-}
-user.greet()
+let user = {
+  name: "g",
+  greet() {
+    console.log(user.name);
+  },
+};
+user.greet();
+
+let admin = user;
+user = null;
+admin.greet();
