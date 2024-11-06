@@ -184,7 +184,18 @@
 
 // this without obj
 
+// function f() {
+//   console.log(this);
+// }
+// f();
+
+//n this in function
 function f() {
-  console.log(this);
+  return {
+    name: "N",
+    result: this,
+  };
 }
-f();
+let user = f();
+
+console.log(user.result.name);
