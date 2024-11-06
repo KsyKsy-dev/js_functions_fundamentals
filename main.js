@@ -155,14 +155,29 @@
 //interlinked objects
 // this keyword
 
-let user = {
-  name: "g",
-  greet() {
-    console.log(user.name);
-  },
-};
-user.greet();
+// let user = {
+//   name: "g",
+//   greet() {
+//     console.log(this.name);
+//   },
+// };
+// user.greet();
 
-let admin = user;
-user = null;
-admin.greet();
+// let admin = user;
+// user = null;
+// admin.greet();
+
+// keyword this in function
+
+let user = {
+  name: "User",
+};
+let admin = { name: "Admin" };
+
+function greet() {
+  console.log(this.name);
+}
+user.f = greet;
+admin.f = greet;
+user.f();
+admin.f();
