@@ -169,15 +169,22 @@
 
 // keyword this in function
 
-let user = {
-  name: "User",
-};
-let admin = { name: "Admin" };
+// let user = {
+//   name: "User",
+// };
+// let admin = { name: "Admin" };
 
-function greet() {
-  console.log(this.name);
+// function greet() {
+//   console.log(this.name);
+// }
+// user.f = greet;
+// admin.f = greet;
+// user.f();
+// admin.f();
+
+// this without obj
+
+function f() {
+  console.log(this);
 }
-user.f = greet;
-admin.f = greet;
-user.f();
-admin.f();
+f();
