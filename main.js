@@ -205,19 +205,32 @@
 
 // methods calculator
 
-let calculator = {
-  a: 0,
-  b: 0,
-  read() {
-    this.a = +prompt("add number", 0);
-    this.b = +prompt("add number", 0);
+// let calculator = {
+//   a: 0,
+//   b: 0,
+//   read() {
+//     this.a = +prompt("add number", 0);
+//     this.b = +prompt("add number", 0);
+//   },
+//   sum() {
+//     return this.a + this.b;
+//   },
+//   mltpl() {
+//     return this.a * this.b;
+//   },
+// };
+// calculator.read();
+// console.log(calculator.sum());
+
+// leader
+
+let leader = {
+  step: 0,
+  up() {
+    return this.step++;
   },
-  sum() {
-    return this.a + this.b;
-  },
-  mltpl() {
-    return this.a * this.b;
+  down() {
+    return this.step--;
   },
 };
-calculator.read();
-console.log(calculator.sum());
+console.log(leadder.up());
