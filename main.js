@@ -248,5 +248,5 @@ function User(name) {
   this.isAdmin = false;
 }
 let user2 = new User("John");
-console.log(user2.name);
-console.log(user2.isAdmin);
+console.log(user2.user);
+console.log(user2);
