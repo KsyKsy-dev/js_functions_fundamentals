@@ -224,19 +224,29 @@
 
 // leader
 
-let leader = {
-  step: 0,
-  up() {
-    this.step++;
-    return this;
-  },
-  down() {
-    this.step--;
-    return this;
-  },
-  showStep() {
-    console.log(this.step);
-    return this;
-  },
-};
-leader.up().showStep().down().showStep().up().up().showStep();
+// let leader = {
+//   step: 0,
+//   up() {
+//     this.step++;
+//     return this;
+//   },
+//   down() {
+//     this.step--;
+//     return this;
+//   },
+//   showStep() {
+//     console.log(this.step);
+//     return this;
+//   },
+// };
+// leader.up().showStep().down().showStep().up().up().showStep();
+
+// constructor functions
+
+function User(name) {
+  this.user = name;
+  this.isAdmin = false;
+}
+let user2 = new User("John");
+console.log(user2.name);
+console.log(user2.isAdmin);
