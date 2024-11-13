@@ -310,11 +310,11 @@
 // calc.sum();
 
 function Accumulator(start) {
-  this.start = start;
-  this.value;
+  this.value = start;
 
   this.read = function () {
-    this.value = +prompt("Add number", 0);
+    this.value += +prompt("Add number", 0);
+
     return this.value;
   };
 }
