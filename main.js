@@ -254,6 +254,7 @@ function Gpas(dest) {
   //const function creates new obj and asign it to this this ={ }
   this.dest = dest;
   this.time = 10;
+  return { dest: "Frankfurt" };
 }
 // e new function calling
 
