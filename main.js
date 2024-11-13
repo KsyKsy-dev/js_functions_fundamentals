@@ -283,13 +283,28 @@
 
 //   // Other properties or methods
 // })();
-let obj = {};
-function A(a) {
-  return obj;
+// let obj = {};
+// function A(a) {
+//   return obj;
+// }
+// function B(b) {
+//   return obj;
+// }
+// let a = new A();
+// let b = new B();
+// console.log(a == b);
+function Calculator() {
+  this.a;
+  this.b;
+  this.read = function () {
+    this.a = +prompt("Add first number", 0);
+    this.b = +prompt("Add second number", 0);
+    console.log();
+  };
+  this.sum = function () {
+    return this.a + this.b;
+  };
 }
-function B(b) {
-  return obj;
-}
-let a = new A();
-let b = new B();
-console.log(a == b);
+let calc = new Calculator();
+calc.read();
+console.log(calc.sum());
