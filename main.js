@@ -293,18 +293,32 @@
 // let a = new A();
 // let b = new B();
 // console.log(a == b);
-function Calculator() {
-  this.a;
-  this.b;
+// function Calculator() {
+//   this.a;
+//   this.b;
+//   this.read = function () {
+//     this.a = +prompt("Add first number", 0);
+//     this.b = +prompt("Add second number", 0);
+//     console.log();
+//   };
+//   this.sum = function () {
+//     console.log(this.a + this.b);
+//   };
+// }
+// let calc = new Calculator();
+// calc.read();
+// calc.sum();
+
+function Accumulator(start) {
+  this.start = start;
+  this.value;
+
   this.read = function () {
-    this.a = +prompt("Add first number", 0);
-    this.b = +prompt("Add second number", 0);
-    console.log();
-  };
-  this.sum = function () {
-    return this.a + this.b;
+    this.value = +prompt("Add number", 0);
+    return this.value;
   };
 }
-let calc = new Calculator();
-calc.read();
-console.log(calc.sum());
+let acc = new Accumulator(1);
+acc.read();
+acc.read();
+console.log(acc.value);
