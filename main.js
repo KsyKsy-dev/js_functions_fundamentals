@@ -250,13 +250,46 @@
 // console.log(user2.user);
 // console.log(user2);
 
-function Gpas(dest) {
-  //const function creates new obj and asign it to this this ={ }
-  this.dest = dest;
-  this.time = 10;
-  return { dest: "Frankfurt" };
-}
-// e new function calling
+// function Gpas(dest) {
+//   //const function creates new obj and asign it to this this ={ }
+//   this.dest = dest;
+//   this.time = 10;
+//   return { dest: "Frankfurt" };
+// }
+// // e new function calling
 
-let pas1 = new Gpas("Munich");
-console.log(pas1.dest);
+// let pas1 = new Gpas("Munich");
+// console.log(pas1.dest);
+
+// Imediatly Invoked constructor functiom IICF
+
+// let visitor = new (function () {
+//   this.name = " Vikky";
+//   this.txt = " here I am";
+//   this.sayHello = function () {
+//     console.log(`I am ${this.name} and ${this.txt}`);
+//   };
+// })();
+// visitor.sayHello();
+
+// let user = new (function () {
+//   this.name = "John";
+//   this.age = 30;
+
+//   // Additional setup code
+//   this.sayHello = function () {
+//     alert(`Hello, my name is ${this.name}`);
+//   };
+
+//   // Other properties or methods
+// })();
+let obj = {};
+function A(a) {
+  return obj;
+}
+function B(b) {
+  return obj;
+}
+let a = new A();
+let b = new B();
+console.log(a == b);
