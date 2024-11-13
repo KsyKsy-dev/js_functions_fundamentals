@@ -242,11 +242,20 @@
 // leader.up().showStep().down().showStep().up().up().showStep();
 
 // constructor functions
+// function User(name) {
+//   this.user = name;
+//   this.isAdmin = false;
+// }
+// let user2 = new User("John");
+// console.log(user2.user);
+// console.log(user2);
 
-function User(name) {
-  this.user = name;
-  this.isAdmin = false;
+function Gpas(dest) {
+  //const function creates new obj and asign it to this this ={ }
+  this.dest = dest;
+  this.time = 10;
 }
-let user2 = new User("John");
-console.log(user2.user);
-console.log(user2);
+// e new function calling
+
+let pas1 = new Gpas("Munich");
+console.log(pas1.dest);
