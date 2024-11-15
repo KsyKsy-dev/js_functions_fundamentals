@@ -309,16 +309,21 @@
 // calc.read();
 // calc.sum();
 
-function Accumulator(start) {
-  this.value = start;
+// function Accumulator(start) {
+//   this.value = start;
 
-  this.read = function () {
-    this.value += +prompt("Add number", 0);
+//   this.read = function () {
+//     this.value += +prompt("Add number", 0);
 
-    return this.value;
-  };
-}
-let acc = new Accumulator(1);
-acc.read();
-acc.read();
-console.log(acc.value);
+//     return this.value;
+//   };
+// }
+// let acc = new Accumulator(1);
+// acc.read();
+// acc.read();
+// console.log(acc.value);
+
+//optional chaining
+
+let user = {};
+console.log(user?.gener?.adress);
