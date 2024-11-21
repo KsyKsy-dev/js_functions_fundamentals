@@ -325,5 +325,5 @@
 
 //optional chaining
 
-let user = {};
-console.log(user?.gener?.adress);
+// let user = {};
+// console.log(user?.gener?.adress);
