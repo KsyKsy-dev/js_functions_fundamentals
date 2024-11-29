@@ -324,6 +324,15 @@
 // console.log(acc.value);
 
 //optional chaining
-let user = {};
+// let user = {};
 
-console.log(user.adress?.street);
+// console.log(user.adress?.street);
+
+let userAdmin = {
+  isAdmin() {
+    console.log("Admin is here");
+  },
+};
+let userGuest = {};
+console.log(userAdmin.isAdmin());
+console.log(userGuest.isAdmin?.());
