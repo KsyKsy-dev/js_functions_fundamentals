@@ -324,6 +324,6 @@
 // console.log(acc.value);
 
 //optional chaining
+let user = {};
 
-// let user = {};
-// console.log(user?.gener?.adress);
+console.log(user.adress?.street);
