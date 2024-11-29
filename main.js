@@ -332,7 +332,10 @@ let userAdmin = {
   isAdmin() {
     console.log("Admin is here");
   },
+  level: 1,
 };
 let userGuest = {};
-console.log(userAdmin.isAdmin());
-console.log(userGuest.isAdmin?.());
+console.log(userAdmin?.["level"]);
+console.log(userGuest?.["level"]);
+delete userAdmin?.level;
+console.log(userAdmin);
