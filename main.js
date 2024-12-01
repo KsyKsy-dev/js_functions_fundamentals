@@ -328,14 +328,19 @@
 
 // console.log(user.adress?.street);
 
-let userAdmin = {
-  isAdmin() {
-    console.log("Admin is here");
-  },
-  level: 1,
-};
-let userGuest = {};
-console.log(userAdmin?.["level"]);
-console.log(userGuest?.["level"]);
-delete userAdmin?.level;
-console.log(userAdmin);
+// let userAdmin = {
+//   isAdmin() {
+//     console.log("Admin is here");
+//   },
+//   level: 1,
+// };
+// let userGuest = {};
+// console.log(userAdmin?.["level"]);
+// console.log(userGuest?.["level"]);
+// delete userAdmin?.level;
+// console.log(userAdmin);
+
+//Symbols
+let id = Symbol("id");
+let id0 = Symbol("id");
+console.log(id == id0);
