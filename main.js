@@ -342,5 +342,6 @@
 
 //Symbols
 let id = Symbol("id");
-let id0 = Symbol("id");
-console.log(id == id0);
+
+alert(id.toString());
+console.log(id);
