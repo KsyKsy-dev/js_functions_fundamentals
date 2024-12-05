@@ -341,7 +341,14 @@
 // console.log(userAdmin);
 
 //Symbols
-let id = Symbol("id");
+// let id = Symbol("id");
 
-alert(id.toString());
-console.log(id);
+// alert(id.toString());
+// console.log(id);
+let id = Symbol("id");
+let user = {
+  name: "Owl",
+  [id]: 1,
+};
+
+for (let key in user) console.log(key);
