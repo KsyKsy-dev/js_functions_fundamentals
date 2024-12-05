@@ -353,3 +353,5 @@ let user = {
 
 for (let key in user) console.log(key);
 console.log(user[id]);
+let user0 = Object.assign(user);
+console.log(user0[id]);
