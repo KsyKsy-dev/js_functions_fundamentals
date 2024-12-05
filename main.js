@@ -345,13 +345,28 @@
 
 // alert(id.toString());
 // console.log(id);
-let id = Symbol("id");
-let user = {
-  name: "Owl",
-  [id]: 1,
-};
+// let id = Symbol("id");
+// let user = {
+//   name: "Owl",
+//   [id]: 1,
+// };
 
-for (let key in user) console.log(key);
-console.log(user[id]);
-let user0 = Object.assign(user);
-console.log(user0[id]);
+// for (let key in user) console.log(key);
+// console.log(user[id]);
+// let user0 = Object.assign(user);
+// console.log(user0[id]);
+
+// In order to read
+
+let id1 = Symbol.for("id");
+let id0 = Symbol.for("id");
+console.log(id1 === id0);
+
+// read from the global registry
+let id = Symbol.for("id"); // if the symbol did not exist, it is created
+
+// read it again (maybe from another part of the code)
+let idAgain = Symbol.for("id");
+
+// the same symbol
+console.log(id === idAgain); // true
