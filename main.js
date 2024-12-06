@@ -358,15 +358,20 @@
 
 // In order to read
 
-let id1 = Symbol.for("id");
-let id0 = Symbol.for("id");
-console.log(id1 === id0);
+// let id1 = Symbol.for("id");
+// let id0 = Symbol.for("id");
+// console.log(id1 === id0);
 
-// read from the global registry
-let id = Symbol.for("id"); // if the symbol did not exist, it is created
+// // read from the global registry
+// let id = Symbol.for("id"); // if the symbol did not exist, it is created
 
-// read it again (maybe from another part of the code)
-let idAgain = Symbol.for("id");
+// // read it again (maybe from another part of the code)
+// let idAgain = Symbol.for("id");
 
-// the same symbol
-console.log(id === idAgain); // true
+// // the same symbol
+// console.log(id === idAgain); // true
+// Symbol.key() returns name,  Sybol.keyFor() returns key
+
+let s = Symbol.for("id");
+
+console.log(Symbol.keyFor(s));
