@@ -1,1 +1,2 @@
-console.log("Aloha");
+"use strict";
+console.log(module);
