@@ -1,2 +1,2 @@
 "use strict";
-console.log(module);
+require("./logger.js");
