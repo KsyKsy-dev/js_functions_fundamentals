@@ -372,6 +372,6 @@
 // console.log(id === idAgain); // true
 // Symbol.key() returns name,  Sybol.keyFor() returns key
 
-let s = Symbol.for("id");
+// let s = Symbol.for("id");
 
-console.log(Symbol.keyFor(s));
+// console.log(Symbol.keyFor(s));
