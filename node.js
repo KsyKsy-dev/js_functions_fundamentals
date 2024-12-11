@@ -1,2 +1,4 @@
-"use strict";
-require("./logger.js");
+"use strict"; // Global strict mode
+const logger = require("./logger.js");
+logger.log("message");
+console.log(logger);

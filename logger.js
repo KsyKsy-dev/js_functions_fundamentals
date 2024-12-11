@@ -1,7 +1,7 @@
-"use strict";
+"use strict"; // Global strict mode,
 
 let url = "https//www.name.ork";
-let log = function (message) {
+function log(message) {
   console.log(message);
-};
+}
 module.exports.log = log;
