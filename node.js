@@ -1,7 +1,5 @@
-const os = require("os");
+const fs = require("fs");
 
-const totalMemory = os.totalmem;
-const freeMem = os.freemem;
+let readDir = fs.readdirSync("./");
 
-console.log(`Total mem is: ${totalMemory}`);
-console.log(`Free mem is : ${freeMem}`);
+console.log(readDir);
