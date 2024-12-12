@@ -1,4 +1,7 @@
-"use strict"; // Global strict mode
-const logger = require("./logger.js");
-logger.log("message");
-console.log(logger);
+const os = require("os");
+
+const totalMemory = os.totalmem;
+const freeMem = os.freemem;
+
+console.log(`Total mem is: ${totalMemory}`);
+console.log(`Free mem is : ${freeMem}`);
