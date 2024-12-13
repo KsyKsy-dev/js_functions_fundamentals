@@ -1,5 +1,6 @@
 const EventEmitter = require("events"); // class
 const emitter = new EventEmitter(); // obj
+console.log(emitter);
 
 //register listener
 emitter.on("messageLogger", function () {
