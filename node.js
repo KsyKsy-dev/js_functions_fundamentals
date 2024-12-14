@@ -1,10 +1,6 @@
-const EventEmitter = require("events"); // class
-const emitter = new EventEmitter(); // obj
-console.log(emitter);
-
-//register listener
-emitter.on("messageLogger", function () {
-  console.log("Message is logged");
+const EventEmitter = require("events");
+const emitter = new EventEmitter();
+emitter.on("event", function () {
+  console.log("Message is logged!");
 });
-//Raise an event tslate emit: make a noise produse a signal
-emitter.emit("messageLogger");
+emitter.emit("event");
