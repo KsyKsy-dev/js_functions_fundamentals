@@ -1,4 +1,7 @@
-function sey(name) {
-  console.log("Hey,", name);
+let url = "http//www.swi.org";
+function log(m) {
+  console.log(m);
 }
-sey("JO!");
+
+module.exports.url = url;
+module.exports.log = log;

@@ -1,1 +1,3 @@
-"use strict"; // Global strict mode,
+let logger = require("./node");
+console.log(logger);
+logger.log("message");
