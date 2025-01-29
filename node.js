@@ -5,3 +5,4 @@ function log(m) {
 
 module.exports.url = url;
 module.exports.log = log;
+console.log(module);
