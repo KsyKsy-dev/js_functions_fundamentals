@@ -4,4 +4,5 @@ function log(m) {
 }
 
 module.exports.log = log;
-module.exports = log;
+
+console.log(module);
