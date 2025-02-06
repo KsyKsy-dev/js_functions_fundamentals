@@ -1,2 +1,3 @@
-const logger = require("./node");
-console.log(logger);
+const path = require("path");
+let dir = path.parse(__filename);
+console.log(dir);
