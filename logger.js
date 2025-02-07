@@ -1,3 +1,5 @@
-const path = require("path");
-let dir = path.parse(__filename);
-console.log(dir);
+const os = require("os");
+var totalmeme = os.totalmem();
+var freemem = os.freemem();
+console.log(totalmeme);
+console.log(freemem);
