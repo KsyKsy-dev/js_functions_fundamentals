@@ -1,8 +1,6 @@
-const fs = require("fs");
-let files = fs.readdirSync("./");
-
-console.log(files);
-fs.readdir("./", function (err, files) {
-  if (err) console.log(err);
-  else console.log(files);
+const EventEmitter = require("events");
+const emmiter = new EventEmitter();
+emmiter.on("myEvent", function () {
+  console.log("This event is the fire");
 });
+emmiter.emit("myEvent");
