@@ -1,7 +1,8 @@
 const EventEmitter = require("events");
-console.log(typeof EventEmitter);
-const emmiter = new EventEmitter();
-emmiter.on("myEvent", (eventArg) => {
-  console.log("This event is the fire ", eventArg);
+const emitter = new EventEmitter();
+
+emitter.on("ev", (eventArg) => {
+  console.log("Pass it to him the ", eventArg);
 });
-emmiter.emit("myEvent", { id: "user", url: "http//www..." });
+
+emitter.emit("ev", { data: "Message" });
