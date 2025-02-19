@@ -1,8 +1,6 @@
 const EventEmitter = require("events");
 const emitter = new EventEmitter();
-
-emitter.on("ev", (eventArg) => {
-  console.log("Pass it to him the ", eventArg);
+emitter.on("Event", (arg) => {
+  console.log("let's ", arg, " to be!");
 });
-
-emitter.emit("ev", { data: "Message" });
+emitter.emit("Event", "the sun");
