@@ -3,4 +3,4 @@ const emitter = new EventEmitter();
 emitter.on("Event", (arg) => {
   console.log("let's ", arg, " to be!");
 });
-emitter.emit("Event", "the sun");
+emitter.emit("Event", "the action!!!");
