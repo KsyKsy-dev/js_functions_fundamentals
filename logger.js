@@ -1,4 +1,3 @@
-const logg = require("path");
-const objPath = logg.parse(__filename);
-
-console.log(objPath);
+const fileS = require("fs");
+const readDir = fileS.readdirSync("./");
+console.log(readDir);
