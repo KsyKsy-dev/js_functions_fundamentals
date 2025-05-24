@@ -1,10 +1,10 @@
 let fs = require("fs");
-let files = fs.readdirSync("fs");
-
+let files = fs.readdirSync("./");
+console.log(files);
 fs.readdir("./", function (err, files) {
   if (err) {
-    console.log("err ", err);
+    console.log("ERR!");
   } else {
-    console.log("Files:", files);
+    console.log("FILES: ", files);
   }
 });
