@@ -1,6 +1,9 @@
+let EventEmitter = require("events");
+let emitter = new EventEmitter();
 let url = "https://www.log.org";
 
-let log = function (message) {
-  console.log(message);
+emitter.emit("loggin", { id: 1, url: "https://www.dd.orc" });
+let log = function (arg) {
+  console.log(arg);
 };
 module.exports = log;
