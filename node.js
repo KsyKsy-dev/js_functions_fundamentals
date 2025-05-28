@@ -1,5 +1,5 @@
 let EventEmitter = require("events");
-let emitter = new EventEmitter();
+let emitter = new EventEmitter(1);
 let url = "https://www.log.org";
 
 emitter.emit("loggin", { id: 1, url: "https://www.dd.orc" });
