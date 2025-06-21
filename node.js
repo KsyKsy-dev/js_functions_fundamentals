@@ -23,3 +23,18 @@ exampleInstance1.exMethod();
 // 1 create class prod
 // 2 create metod print cl prodact
 // 3 create method calc taxes to print prduct price with  taxes
+
+class Product {
+  constructor(productType, price) {
+    this.productType = productType;
+    this.price = price;
+  }
+
+  printProductPropertyes() {
+    console.log(`Product ${this.productType}`);
+    console.log(`Price ${this.price}`);
+  }
+}
+
+const prod1 = new Product("Sofa", 1000);
+prod1.printProductPropertyes();
