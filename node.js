@@ -7,3 +7,15 @@ let log = function (arg) {
   console.log(arg);
 };
 module.exports = log;
+
+class Example {
+  constructor(var1, var2) {
+    this.var1 = var1;
+    this.var2 = var2;
+  }
+  exMethod() {
+    console.log(`print class's vars ${this.var1} and ${this.var2}`);
+  }
+}
+const exampleInstance1 = new Example("str", "nmbr");
+exampleInstance1.exMethod();
