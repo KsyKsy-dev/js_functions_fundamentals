@@ -19,3 +19,7 @@ class Example {
 }
 const exampleInstance1 = new Example("str", "nmbr");
 exampleInstance1.exMethod();
+
+// 1 create class prod
+// 2 create metod print cl prodact
+// 3 create method calc taxes to print prduct price with  taxes
