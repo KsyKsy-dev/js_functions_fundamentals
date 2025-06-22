@@ -28,3 +28,6 @@ emitter.on("Eventname", (prop) => {
   console.log("Async event statys is: ", prop);
 });
 emitter.emit("Eventname", "Go!");
+
+const log = require("./logger");
+log("logged");
