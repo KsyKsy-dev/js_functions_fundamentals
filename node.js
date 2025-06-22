@@ -22,5 +22,9 @@
 
 // const total = prod1.calcProductTaxes(salesTax);
 // console.log(`Total price with taxes ${total}`);
-const emmiter = require("events");
-console.log(emmiter);
+const EventEmitter = require("events");
+const emitter = new EventEmitter();
+emitter.on("Eventname", (prop) => {
+  console.log("Async event statys is: ", prop);
+});
+emitter.emit("Eventname", "Go!");
