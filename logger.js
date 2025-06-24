@@ -26,7 +26,18 @@ class Dev extends Person {
     // castomprop
     this.experience = experience;
   }
+  code() {
+    console.log(`${this.name} is coding for ${this.experience} of yesrs`);
+  }
 }
 let dev1 = new Dev("Ann", 46, 6);
-console.log(dev1);
-dev1.describe();
+const dev2 = new Dev("Jane", 33, 12);
+dev2.code();
+const devs = [new Dev("Jacky", 45, 10), new Dev("Lucia", 43, 18)];
+
+function printDevs(programmers) {
+  for (let programmer of programmers) {
+    programmer.code();
+  }
+}
+printDevs(devs);
