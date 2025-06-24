@@ -19,3 +19,14 @@ class Person {
 }
 let person1 = new Person("Lia", 45);
 console.log(person1);
+
+class Dev extends Person {
+  constructor(name, age, experience) {
+    super(name, age);
+    // castomprop
+    this.experience = experience;
+  }
+}
+let dev1 = new Dev("Ann", 46, 6);
+console.log(dev1);
+dev1.describe();
