@@ -1,5 +1,1 @@
-let role = ["User", "Dev", "Admin"];
-function checkRole(i) {
-  process.stdin.write(`Your role is ${role[i]}`);
-}
-checkRole(0);
+process.stdout.write("Message output");
