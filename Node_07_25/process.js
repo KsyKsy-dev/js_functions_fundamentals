@@ -1,6 +1,5 @@
 "use strict";
-let str = "str";
-let str0 = "6";
-let nm = parseInt(str0);
-
-process.stdout.write(str);
+process.stdin.setEncoding("utf-8");
+process.process.on("data", (data) => {
+  console.log(data);
+});
